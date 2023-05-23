@@ -137,14 +137,14 @@ import { SafeAreaView, Text, StyleSheet, Pressable, FlatList, Alert, Modal } fro
 import Formulario from './src/components/Formulario';
 import Paciente from './src/components/Paciente';
 import InformacionPaciente from './src/components/InformacionPaciente';
-import LandingPage from "./src/components/LandingPage" // Importa el componente LandingPage
+import LandingPage from "./src/components/LandingPage" 
 
 const App = () => {
   const [modalVisible, setModalVisible] = useState(false);
   const [pacientes, setPacientes] = useState([]);
   const [paciente, setPaciente] = useState({});
   const [modalPaciente, setModalPaciente] = useState(false);
-  const [showLandingPage, setShowLandingPage] = useState(true); // Variable de estado para controlar la página de inicio
+  const [showLandingPage, setShowLandingPage] = useState(true)
 
   const pacienteEditar = id => {
     const pacienteEditar = pacientes.filter(paciente => paciente.id === id);
@@ -175,7 +175,7 @@ const App = () => {
   if (showLandingPage) {
     return (
       <LandingPage
-        onPress={() => setShowLandingPage(false)} // Maneja el evento para ocultar la página de inicio
+        onPress={() => setShowLandingPage(false)} 
       />
     );
   }
